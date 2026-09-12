@@ -1,0 +1,30 @@
+body {
+    background-color: pink;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 10px;
+}
+
+.item{
+    background-color: yellow;
+    text-align: center;
+}
+
+.item_3{
+    background-color: yellow;
+    grid-column: 1 / span 8;
+    grid-row-start: 4;
+    text-align: center;
+}
+
+.item_9{
+    background-color: yellow;
+    grid-column-start: 8;
+    grid-row-start: 1;
+    text-align: center;
+}
+
