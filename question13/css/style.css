@@ -1,0 +1,82 @@
+.container{
+    display: grid;
+    grid-template-columns: 50px 300px 200px;
+    grid-template-rows: repeat(25, 50px);
+    background-color: white;
+    margin: 0 auto;
+    width: 550px;
+}
+
+.nav_logo{
+    grid-row-start: 1;
+    grid-column-start: 1;
+    margin: 10px;
+}
+
+.nav_bar{
+    grid-row-start: 1;
+    grid-column-start: 2;
+}
+
+.nav_icons{
+    grid-row-start: 1;
+    grid-column-start: 3;
+}
+
+.content_sec{
+    grid-column: 1/ span 3;
+    grid-row: 2 / span 20;
+    margin: 10px;
+    border-bottom: 1px black solid;
+}
+
+.nav_bar h4 {
+    margin-bottom: 5px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.nav_bar p {
+    margin-top: 5px;
+    font-size: 10px;
+    color: black;
+}
+
+.icon{
+    display: inline-block;
+    margin: 10px;
+    margin-top: 20px;
+}
+
+.profile-pic-sec{
+    display: grid;
+    grid-template-columns: 200px 150px;
+    grid-template-rows: repeat(3, 50px);
+    column-gap: 100px;
+}
+
+.profile-pic{
+    border-radius: 50%;
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+.profile-title{
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
+
+.share-btn{
+    grid-column-start: 2;
+    grid-row-start: 2;
+    background-color: red;
+    text-align: center;
+    color: white;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.profile-content{
+    grid-column-start: 1;
+    grid-row-start: 3;
+}
+
